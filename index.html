@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Visualizer</title>
+    <style>
+        .wrapper{
+            margin: 0 auto;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #grid-container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+
+        }
+        .bar {
+            background-color: lightgray;
+            height: 100px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+<input type="file" id="audioFile" accept="audio/*" />
+<audio id="audioPlayer" controls></audio>
+</div>
+<div id="grid-container"></div>
+<script src="script.js"></script>
+</body>
+</html>
