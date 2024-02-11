@@ -32,7 +32,7 @@ document.getElementById('audioFile').addEventListener('change', function (e) {
         gridBars.forEach((bar, index) => {
             const frequencyValue = dataArray[index];
             const yellow = frequencyValue;
-            bar.style.backgroundColor = `rgb(255, 255, ${yellow})`;
+            bar.style.backgroundColor = `rgb(${yellow}, ${yellow}, 0)`;
         });
         requestAnimationFrame(draw);
     }
